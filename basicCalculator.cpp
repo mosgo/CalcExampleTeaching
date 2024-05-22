@@ -21,6 +21,9 @@ int main() {
 	case '-':
 		result = number01 - number02;
 		break;
+	case '*':
+		result = number01 * number02;
+		break;
 	case '/':
 		if (number02 != 0) {
 			result = number01 / number02;
@@ -54,6 +57,6 @@ void calculator() {
 	cin >> number01;
 	cout << "Enter second digit: \n";
 	cin >> number02;
-	cout << "Please enter an operator (+, -, /, %): ";
+	cout << "Please enter an operator (+, -, /, *, %): ";
 	cin >> o;
 }
